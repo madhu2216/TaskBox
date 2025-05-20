@@ -35,7 +35,7 @@ public class TodoServiceImpl implements TodoService {
         return todos.stream()
                 .filter(todo -> todo.getId().equals(id))
                 .findFirst()
-                .orElseThrow(() -> new TodoNotFoundException("Todo not found with id: " + id));
+                .orElseThrow(() -> new TodoNotFoundException("Todo not found with id : " + id));
     }
 
     @Override
